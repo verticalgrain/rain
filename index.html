@@ -13,6 +13,9 @@
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     <style amp-custom>
     /* Add your styles here */
+    .player {
+      margin-top: 600px;
+    }
     </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
@@ -51,89 +54,17 @@
     </script>
   </head>
   <body>
-    <h1>Hello World</h1>
-    
-    Rain Loop 1
-    <amp-audio
-      width="400"
-      height="300"
-      loop
-    >
-      <div fallback>
-        <p>Your browser doesn’t support HTML5 audio</p>
-      </div>
-      <source type="audio/mpeg" src="media/rain-loop-1.mp3" />
-    </amp-audio>
-
-    Rain loop 2
-    <amp-audio
-      width="400"
-      height="300"
-      loop
-    >
-      <div fallback>
-        <p>Your browser doesn’t support HTML5 audio</p>
-      </div>
-      <source type="audio/mpeg" src="media/rain-loop-2.mp3" />
-    </amp-audio>
- 
-    Rain loop 3
-    <amp-audio
-      width="400"
-      height="300"
-      loop
-    >
-      <div fallback>
-        <p>Your browser doesn’t support HTML5 audio</p>
-      </div>
-      <source type="audio/mpeg" src="media/rain-loop-3.mp3" />
-    </amp-audio>
- 
-    Rain loop 4
-    <amp-audio
-      width="400"
-      height="300"
-      loop
-    >
-      <div fallback>
-        <p>Your browser doesn’t support HTML5 audio</p>
-      </div>
-      <source type="audio/mpeg" src="media/rain-loop-4.mp3" />
-    </amp-audio>
-
-    Rain loop 5
-    <amp-audio
-      width="400"
-      height="300"
-      loop
-    >
-      <div fallback>
-        <p>Your browser doesn’t support HTML5 audio</p>
-      </div>
-      <source type="audio/mpeg" src="media/rain-loop-5.mp3" />
-    </amp-audio>
-
-    Rain loop 6
-    <amp-audio
-      width="400"
-      height="300"
-      loop
-    >
-      <div fallback>
-        <p>Your browser doesn’t support HTML5 audio</p>
-      </div>
-      <source type="audio/mpeg" src="media/rain-loop-6.mp3" />
-    </amp-audio>
- 
-    <amp-iframe
-      width="200"
-      height="100"
-      sandbox="allow-scripts allow-same-origin"
-      layout="responsive"
-      frameborder="0"
-      src="https://inspiring-leavitt-036463.netlify.app/"
-    >
-    </amp-iframe>
+    <div class="player">
+      <amp-iframe
+        width="200"
+        height="100"
+        sandbox="allow-scripts allow-same-origin"
+        layout="responsive"
+        frameborder="0"
+        src="https://inspiring-leavitt-036463.netlify.app/"
+      >
+      </amp-iframe>
+    </div>
 
     <amp-img src="hero-img.jpg"
       width="1280" 
