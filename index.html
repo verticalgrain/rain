@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="This is the AMP Boilerplate.">
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
-    <link rel="preload" href="hero-img.jpg" as="image">
+    <link rel="preload" href="assets/hero-img.png" as="image">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <!-- Import other AMP Extensions here -->
     <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
@@ -13,9 +13,34 @@
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     <style amp-custom>
     /* Add your styles here */
-    .player {
-      margin-top: 600px;
+    body{
+      background: #AAE2E2;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      
     }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+    .hero {
+      min-height: 560px;
+    }
+    .hero__img {
+      margin: 50px 0 70px 0;
+    }
+    h1,h2,h3 {
+      margin: 0;
+    }
+    h1 {
+      font-family: georgia, serif;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-weight: 300;
+      line-height: 1.3;
+    }
+    
     </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
@@ -54,16 +79,35 @@
     </script>
   </head>
   <body>
-    <div class="player">
-      <amp-iframe
-        width="200"
-        height="100"
-        sandbox="allow-scripts allow-same-origin"
-        layout="responsive"
-        frameborder="0"
-        src="https://inspiring-leavitt-036463.netlify.app/"
-      >
-      </amp-iframe>
+    <div class="container">
+      <header>
+        <div class="hero">
+          <div class="hero__img">
+            <amp-img src="assets/hero-img.png"
+              width="800" 
+              height="442"
+              layout="responsive"
+              alt="Just rain sounds hero image">
+            </amp-img>
+          </div>
+          <h1>Just rain sounds</h1>
+          <h2>A simple, data friendly rain sounds app that works offline.</h2>
+        </div>
+      </header>
+      <main class="main">
+        
+        <div class="player">
+          <amp-iframe
+            width="200"
+            height="100"
+            sandbox="allow-scripts allow-same-origin"
+            layout="responsive"
+            frameborder="0"
+            src="https://inspiring-leavitt-036463.netlify.app/"
+          >
+          </amp-iframe>
+        </div>
+      </main>
     </div>
 
     <amp-install-serviceworker src="/sw.js"
