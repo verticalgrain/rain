@@ -11,18 +11,6 @@
     <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-    <amp-analytics type="gtag" data-credentials="include">
-    <script type="application/json">
-    {
-      "vars" : {
-        "gtag_id": "G-HGYFS8S5H2",
-        "config" : {
-          "G-HGYFS8S5H2": { "groups": "default" }
-        }
-      }
-    }
-    </script>
-    </amp-analytics>
     <style amp-custom>
     /* Add your styles here */
     body{
@@ -123,6 +111,18 @@
     </script>
   </head>
   <body>
+    <amp-analytics type="gtag" data-credentials="include">
+      <script type="application/json">
+      {
+        "vars" : {
+          "gtag_id": "G-HGYFS8S5H2",
+          "config" : {
+            "G-HGYFS8S5H2": { "groups": "default" }
+          }
+        }
+      }
+      </script>
+    </amp-analytics>
     <div class="container">
       <header>
         <div class="hero">
