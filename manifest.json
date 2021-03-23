@@ -36,5 +36,26 @@
             "sizes": "512x512",
             "type": "image/png"
         }
+    ],
+    "screenshots" : [
+        {
+          "src": "assets/justrainsounds1.png",
+          "sizes": "1439x2881",
+          "type": "image/png"
+        },
+        {
+          "src": "assets/justrainsounds2.png",
+          "sizes": "1439x2881",
+          "type": "image/png"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Play rain sounds",
+            "short_name": "Play Rain",
+            "description": "Start playing rain sounds",
+            "url": "/index.html",
+            "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+        }
     ]
 }
