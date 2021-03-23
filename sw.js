@@ -4,5 +4,8 @@ AMP_SW.init({
     assetCachingOptions: [{
         regexp: /\.(png|jpg|mp3)/,
         cachingStrategy: 'CACHE_FIRST'
-    }]
+    }],
+    offlinePageOptions: {
+        url: '/index.html',
+    },
 });
