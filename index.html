@@ -147,7 +147,7 @@
       layout="nodisplay">
     </amp-install-serviceworker>
 
-    <amp-analytics type="googleanalytics" data-credentials="include">
+    <amp-analytics type="gtag" data-credentials="include">
       <script type="application/json">
       {
         "vars" : {
@@ -160,6 +160,14 @@
           "trackPageview": {
             "on": "visible",
             "request": "pageview"
+          },
+          "hero": {
+            "selector": ".hero",
+            "on": "click",
+            "vars": {
+              "event_name": "Test click",
+              "method": "AMP"
+            }
           }
         }
       }
