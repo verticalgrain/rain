@@ -1,10 +1,35 @@
 {
     "name": "Just Rain Sounds",
-    "short_name": "just-rain-sounds",
-    "theme_color": "#2196f3",
-    "background_color": "#2196f3",
+    "app_name": "Just Rain Sounds",
+    "short_name": "JustRainSounds",
+    "description": "A simple, mobile data friendly rain sounds app that works offline",
+    "theme_color": "#aae2e2",
+    "background_color": "#aae2e2",
     "display": "minimal-ui",
     "orientation": "portrait",
     "scope": "/",
-    "start_url": "/index.html"
+    "start_url": "/index.html",
+    "categories": ["relaxation","productivity","lifestyle","rain","noise cancellation"],
+    "icons": [
+        {
+            "src": "icons/icon-192.png",
+            "sizes": "192x",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-256.png",
+            "sizes": "256x",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-384.png",
+            "sizes": "384x",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-512.png",
+            "sizes": "512x",
+            "type": "image/png"
+        }
+    ]
 }
